@@ -22,4 +22,7 @@
   "devDependencies": {
     "prettier": "^2.7.1"
   }
+  "bin": {
+  "brain-games": "bin/brain-games.js"
+}
 }
