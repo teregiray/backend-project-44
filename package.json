@@ -1,13 +1,14 @@
 {
   "name": "project",
   "version": "1.0.0",
+  "type": "module",
   "description": "Мой первый проект на Хекслете",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "module",
+    "type": "git",
     "url": "git+https://github.com/teregiray/hexlet-js.git"
   },
   "author": "",
@@ -25,5 +26,5 @@
   "bin": {
   "brain-games": "bin/brain-games.js"
   "brain-even": "bin/brain-even.js"
-}
+  }
 }
