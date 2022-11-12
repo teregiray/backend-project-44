@@ -1,4 +1,4 @@
-import greetingFunction from '../src/cli.js' ;
+import greeting from '../src/cli.js' ;
 greetingFunction();
 const randomNumber = Math.floor(Math.random()*100)
 
