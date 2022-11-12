@@ -1,9 +1,8 @@
 import greetingFunction from '../src/cli.js' ;
 greetingFunction();
-
+const randomNumber = Math.floor(Math.random()*100)
 
 const function gameEven = (something) => {
-let randomNumber = Math.floor(Math.random()*100)
 let evenBoolean = randomNumber % 2 === 0;
 let question = "Question: ";
 let result = false;
