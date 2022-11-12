@@ -1,3 +1,7 @@
+import greetingFunction from '../src/cli.js' ;
+greetingFunction();
+
+
 const function gameEven = (something) => {
 let randomNumber = Math.floor(Math.random()*100)
 let evenBoolean = randomNumber % 2 === 0;
