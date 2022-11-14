@@ -1,4 +1,4 @@
-import {greeting} from '../src/cli.js' ;
+import {greeting,randomNumber} from '../src/cli.js' ;
 greeting();
 const isEven = () => {
 const evenAnswer = randomNumber % 2 === 0
