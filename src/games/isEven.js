@@ -17,7 +17,7 @@ else if (answerUser === "no" && evenAnswer  === false ) {
 	console.log("Correct!");
 }
 else {
-console.log(answerUser + "is wrong answer  ;(. Correct answer was 'no'.")
+console.log(answerUser + " is wrong answer  ;(. Correct answer was 'no'.")
 break; 
 }
 }
