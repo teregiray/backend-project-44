@@ -18,7 +18,8 @@ else if (answersUser === "no" && evenAnswer  === false ) {
 	answersCounter +=1;
 	console.log("Correct!");
 }
-else { console.log(answerUser + "is wrong answer  ;(. Correct answer was 'no'.") 
+else {
+console.log(answerUser + "is wrong answer  ;(. Correct answer was 'no'.") 
 }
 
 if (answersCounter === 3) {
