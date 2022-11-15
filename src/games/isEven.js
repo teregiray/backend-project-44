@@ -11,7 +11,6 @@ const answerUser = readlineSync.question("Your answer: ");
 if (answerUser === "yes" && evenAnswer === true) {
 	answersCounter =+1;
 	console.log("Correct!");
-	break;
 }
 else if (answerUser === "no" && evenAnswer  === false ) {
 	answersCounter +=1;
