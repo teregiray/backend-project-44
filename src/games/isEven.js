@@ -1,7 +1,6 @@
 import readlineSync from 'readline-sync';
 import {greeting} from '../cli.js' ;
 greeting();
-
 console.log('Answer "yes" if the number is even, otherwise answer "no".')
 let answersCounter = 0;
 while(answersCounter < 3) {
@@ -12,6 +11,7 @@ const answerUser = readlineSync.question("Your answer: ");
 if (answerUser === "yes" && evenAnswer === true) {
 	answersCounter =+1;
 	console.log("Correct!");
+	break;
 }
 else if (answerUser === "no" && evenAnswer  === false ) {
 	answersCounter +=1;
@@ -23,6 +23,5 @@ break;
 }
 }
 if (answersCounter === 3) {
-console.log("Congratulations, Bill!") // добавить экспорт в cli.js переменную имени
+console.log("Congratulations, Bill"  ) // придумать как эспортировать переменную из cli.js и заменить на "Bill"
 }
-
