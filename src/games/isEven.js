@@ -1,3 +1,4 @@
+import readlineSync from 'readline-sync';
 import {greeting} from '../cli.js' ;
 import {randomNumber} from '../index.js' ; 
 greeting();
@@ -20,7 +21,7 @@ else if (answersUser === "no" && evenAnswer  === false ) {
 else {
 console.log(answerUser + "is wrong answer  ;(. Correct answer was 'no'.") 
 }
-
+}
 if (answersCounter === 3) {
 console.log("Congratulations, Bill!") // добавить экспорт в cli.js переменную имени
 }
