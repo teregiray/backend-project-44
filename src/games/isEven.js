@@ -14,7 +14,7 @@ if (answerUser === "yes" && evenAnswer === true) {
 	answersCounter =+1;
 	console.log("Correct!");
 }
-else if (answersUser === "no" && evenAnswer  === false ) {
+else if (answerUser === "no" && evenAnswer  === false ) {
 	answersCounter +=1;
 	console.log("Correct!");
 }
