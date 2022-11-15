@@ -14,7 +14,6 @@ if (answerUser === "yes" && evenAnswer === true) {
 }
 else if (answerUser === "yes" && evenAnswer === false) {
 console.log(answerUser + " is wrong answer  ;(. Correct answer was 'no'. \nLet's try again, Bill!")
-continue;
 }
 else if (answerUser === "no" && evenAnswer  === false ) {
 	answersCounter +=1;
@@ -22,7 +21,6 @@ else if (answerUser === "no" && evenAnswer  === false ) {
 }
 else {
 console.log(answerUser + " is wrong answer  ;(. Correct answer was 'yes'. \nLet's try again, Bill!")
-continue; 
 }
 
 }
