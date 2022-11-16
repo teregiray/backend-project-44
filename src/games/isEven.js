@@ -10,16 +10,16 @@ console.log("Question: " + randomNumber);
 const answerUser = readlineSync.question("Your answer: ");
 
 if (answerUser === "yes" && evenAnswer === true) {
-	answersCounter =+1;
 	console.log("Correct!");
+	answersCounter =+1;
 }
 else if (answerUser === "yes" && evenAnswer === false) {
 console.log(answerUser + " is wrong answer  ;(. Correct answer was 'no'. \nLet's try again, Bill!")
 break;
 }
 else if (answerUser === "no" && evenAnswer  === false ) {
-	answersCounter +=1;
 	console.log("Correct!");
+	answersCounter +=1;
 }
 else if (answerUser === "no" && evenAnswer === true){
 console.log(answerUser + " is wrong answer  ;(. Correct answer was 'yes'. \nLet's try again, Bill!")
