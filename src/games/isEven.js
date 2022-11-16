@@ -1,6 +1,8 @@
 import readlineSync from 'readline-sync';
-import userName from '../cli.js' ;
-greeting();
+import name from '../cli.js' ;
+const userName = name()
+console.log('Welcome to the Brain Games!');
+console.log(`Hello, ${userName}!`);
 console.log('Answer "yes" if the number is even, otherwise answer "no".')
 export function isEven()  {
 for(let answersCounter = 0;answersCounter < 3; answersCounter +=1) {
@@ -13,7 +15,7 @@ if (answerUser === "yes" && evenNumber === true) {
 }
 
 else if (answerUser === "yes" && evenNumber === false) {
-	console.log(answerUser + " is wrong answer  ;(. Correct answer was 'no'. \nLet's try again, Bill!")
+	console.log(answerUser + ` is wrong answer  ;(. Correct answer was 'no'. \nLet's try again, ${userName}!`)
 	break;
 	}
 
@@ -22,13 +24,13 @@ else if (answerUser === "yes" && evenNumber === false) {
 }
 
 else if (answerUser === "no" && evenNumber === true) {
-console.log(answerUser + " is wrong answer  ;(. Correct answer was 'yes'. \nLet's try again, Bill!")
+console.log(answerUser + ` is wrong answer  ;(. Correct answer was 'yes'. \nLet's try again, ${userName}!`)
 break;
 }
 
 }
 
-console.log("Congratulations, Bill"  ) // придумать как эспортировать переменную из cli.js и заменить на "Bill"
+console.log(`Congratulations,  ${userName}!  `) 
 }
 
 isEven()
