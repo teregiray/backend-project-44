@@ -3,35 +3,32 @@ import {greeting} from '../cli.js' ;
 greeting();
 console.log('Answer "yes" if the number is even, otherwise answer "no".')
 export function isEven()  {
-let answersCounter = 0
-while(answersCounter < 3) {
+for(let answersCounter = 0;answersCounter < 3; answersCounter +=1) {
 	const randomNumber = Math.floor(Math.random() * 100);
-	const evenAnswer = randomNumber % 2 === 0
+	const evenNumber = randomNumber % 2 === 0
 	console.log("Question: " + randomNumber);
 	const answerUser = readlineSync.question("Your answer: ");
-if (answerUser === "yes" && evenAnswer === true) {
+if (answerUser === "yes" && evenNumber === true) {
 	console.log("Correct!");
-	answersCounter =+1;
 }
 
-else if (answerUser === "yes" && evenAnswer === false) {
+else if (answerUser === "yes" && evenNumber === false) {
 	console.log(answerUser + " is wrong answer  ;(. Correct answer was 'no'. \nLet's try again, Bill!")
 	return
 	}
 
-	if (answerUser === "no" && evenAnswer  === false ) {
+	if (answerUser === "no" && evenNumber  === false ) {
 	console.log("Correct!");
-	answersCounter +=1;
 }
 
-else if (answerUser === "no" && evenAnswer === true) {
+else if (answerUser === "no" && evenNumber === true) {
 console.log(answerUser + " is wrong answer  ;(. Correct answer was 'yes'. \nLet's try again, Bill!")
 return
 }
 
 }
-if (answersCounter === 3) {
+
 console.log("Congratulations, Bill"  ) // придумать как эспортировать переменную из cli.js и заменить на "Bill"
 }
-}
+
 isEven()
