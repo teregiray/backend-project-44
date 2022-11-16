@@ -32,5 +32,3 @@ break;
 
 console.log(`Congratulations,  ${userName}!  `) 
 }
-
-isEven()
