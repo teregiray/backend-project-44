@@ -14,7 +14,7 @@ if (answerUser === "yes" && evenNumber === true) {
 
 else if (answerUser === "yes" && evenNumber === false) {
 	console.log(answerUser + " is wrong answer  ;(. Correct answer was 'no'. \nLet's try again, Bill!")
-	return
+	break;
 	}
 
 	if (answerUser === "no" && evenNumber  === false ) {
@@ -23,7 +23,7 @@ else if (answerUser === "yes" && evenNumber === false) {
 
 else if (answerUser === "no" && evenNumber === true) {
 console.log(answerUser + " is wrong answer  ;(. Correct answer was 'yes'. \nLet's try again, Bill!")
-return
+break;
 }
 
 }
