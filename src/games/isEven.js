@@ -8,19 +8,22 @@ while(answersCounter < 3) {
 	const evenAnswer = randomNumber % 2 === 0
 console.log("Question: " + randomNumber);
 const answerUser = readlineSync.question("Your answer: ");
+
 if (answerUser === "yes" && evenAnswer === true) {
 	answersCounter =+1;
 	console.log("Correct!");
 }
 else if (answerUser === "yes" && evenAnswer === false) {
 console.log(answerUser + " is wrong answer  ;(. Correct answer was 'no'. \nLet's try again, Bill!")
+break;
 }
 else if (answerUser === "no" && evenAnswer  === false ) {
 	answersCounter +=1;
 	console.log("Correct!");
 }
-else {
+else if (answerUser === "no" && evenAnswer === true){
 console.log(answerUser + " is wrong answer  ;(. Correct answer was 'yes'. \nLet's try again, Bill!")
+break;
 }
 
 }
