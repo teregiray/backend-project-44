@@ -1,30 +1,3 @@
-import readlineSync from 'readline-sync';
-import name from '../cli.js' ;
-console.log('Welcome to the Brain Games!');
-const userName = name()
-console.log(`Hello, ${userName}!`);
-console.log('What is the result of the expression?')
-export function calc()  {
-    let signs = ["*","-","+"];
-    for(let answersCounter = 0;answersCounter < 3; answersCounter +=1) {
-        let randomSign = signs[Math.floor(Math.random(signs.length-1))]
-        let result = randomNumber1 + randomSign + randomNumber2 // придумать как сделать из этого арифмитическую операцию
-        let randomNumber1 = Math.floor(Math.random() * 10);
-        let randomNumber2 = Math.floor(Math.random() * 10);
-        console.log("Question: " + randomNumber1 + randomSign + randomNumber2);
-        let answerUser = readlineSync.question("Your answer: ");
-        if(answerUser === result) {
-            console.log("Correct!");
-        }        
-        
-        else  {
-        console.log(answerUser + ` is wrong answer  ;(. Correct answer was ${result}. \nLet's try again, ${userName}!`)
-        break;
-        }
-        
-        }
-        
-        console.log(`Congratulations,  ${userName}! `) 
-        }
-        
-    
+#!/usr/bin/env node
+import {calc} from '../src/games/calc.js';
+calc();
