@@ -10,18 +10,27 @@ export function calc()  {
         let randomSign = signs[Math.floor(Math.random(signs.length-1))]
         let randomNumber1 = Math.floor(Math.random() * 10);
         let randomNumber2 = Math.floor(Math.random() * 10);
-        console.log("Question: " + result);
+        console.log("Question: " + randomNumber1 + randomSign + randomNumber2 );
         let answerUser = readlineSync.question("Your answer: ");
         if (randomSign === "+") {
-            let result = randomNumber1 + randomNumber2;
+           let result = randomNumber1 + randomNumber2;
+           if (answerUser == result) {
+            console.log("Correct!")
+           }
         }
         
         if (randomSign === "-") {
-            let result = randomNumber1 - randomNumber2;
+           let result = randomNumber1 - randomNumber2;
+           if (answerUser == result) {
+            console.log("Correct!")
+           }
         }
 
         if (randomSign === "*") {
-            let result = randomNumber1 * randomNumber2;
+           let result = randomNumber1 * randomNumber2;
+           if (answerUser == result) {
+            console.log("Correct!")
+           }
         }
            else {
         console.log(answerUser + ` is wrong answer  ;(. Correct answer was ${result}. \nLet's try again, ${userName}!`)
