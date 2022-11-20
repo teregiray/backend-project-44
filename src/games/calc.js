@@ -38,6 +38,6 @@ export function calc()  {
     }
     
 }
-        console.log(`Congratulations,  ${userName}! `) 
+        console.log(`Congratulations, ${userName}! `) 
         }
         
