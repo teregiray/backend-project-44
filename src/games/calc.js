@@ -41,4 +41,3 @@ export function calc()  {
         console.log(`Congratulations,  ${userName}! `) 
         }
         
-        calc()
