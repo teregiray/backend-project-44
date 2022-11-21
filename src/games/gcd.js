@@ -35,6 +35,3 @@ export function gcd()  {
         console.log(`Congratulations, ${userName}! `) 
     
 }
-
-gcd()
-// делаю цикл, от 1 до половины максимального числа, проверяю делятся ли оба на это, и если да, то записывать в maxdel
