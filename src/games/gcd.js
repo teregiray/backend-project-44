@@ -1,6 +1,3 @@
-
-
-import _ from 'lodash';
 import readlineSync from 'readline-sync';
 import name from '../cli.js' ;
 console.log('Welcome to the Brain Games!');
