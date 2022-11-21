@@ -14,7 +14,7 @@ export function gcd()  {
     console.log("Question: " + randomNumber1, randomNumber2);
     let answerUser = readlineSync.question("Your answer: ");
     let maxdel = 0;
-    while (randomNumber1 != randomNumber2 && (randomNumber1 != 0 || randomNumber2 != 0 )) {
+    while (randomNumber1 != randomNumber2) {
         if (randomNumber1 > randomNumber2) {
           randomNumber1 = randomNumber1 - randomNumber2;
         }
