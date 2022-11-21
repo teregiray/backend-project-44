@@ -5,12 +5,14 @@ const userName = name()
 console.log(`Hello, ${userName}!`);
 console.log('What is the result of the expression?')
 export function calc()  {
-    let signs = ["*","-","+"];
+    
+   let signs = ["*","-","+"];
     for(let answersCounter = 0;answersCounter < 3; answersCounter +=1) {
         let randomSign = signs[Math.floor(Math.random(signs.length-1))]
         let randomNumber1 = Math.floor(Math.random() * 10);
         let randomNumber2 = Math.floor(Math.random() * 10);
         console.log("Question: " + randomNumber1 + randomSign + randomNumber2 );
+        
         let answerUser = readlineSync.question("Your answer: ");
         if (randomSign === "+") {
            let result = randomNumber1 + randomNumber2;
