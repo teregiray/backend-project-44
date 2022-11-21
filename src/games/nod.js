@@ -1,3 +1,5 @@
+
+
 import _ from 'lodash';
 import readlineSync from 'readline-sync';
 import name from '../cli.js' ;
@@ -13,7 +15,7 @@ export function nod()  {
     const randomNumber2 = (Math.floor(Math.random() * 10))
     console.log("Question: " + randomNumber1, randomNumber2);
     let answerUser = readlineSync.question("Your answer: ");
-    for(let delCounter = 0 ; delCounter <= randomNumber1; delCounter +=1) {
+    for(let delCounter = 0 ; delCounter <=randomNumber1; delCounter +=1) {
         if(randomNumber1 % delCounter === 0 && randomNumber2 % delCounter === 0) {
             answersCounter =+1;
             maxdel = delCounter;
@@ -27,7 +29,9 @@ export function nod()  {
         }
     }
     }
-       if(answersCounter === 3) {}
+       if(answersCounter === 3) {
+        console.log(`Congratulations, ${userName}! `) 
+       }
 }
 nod()
 // делаю цикл, от 1 до половины максимального числа, проверяю делятся ли оба на это, и если да, то записывать в maxdel
