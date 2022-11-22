@@ -13,7 +13,6 @@ export function prime()  {
     for(let i = 0 ; i < randomNumber1 ; i +=1) {
         if(randomNumber1 % i === 0) {
             result += String(i)
-            
         }
     
     }
@@ -22,7 +21,7 @@ export function prime()  {
         console.log("Correct!")
         resultLength = "yes"
     }
-    else if(resultLength === false && answerUser === 'no') {
+    if(resultLength === false && answerUser === 'no') {
         console.log("Correct!")
         resultLength = "no"
     }
