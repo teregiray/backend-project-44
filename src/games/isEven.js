@@ -5,8 +5,8 @@ const userName = name()
 console.log(`Hello, ${userName}!`);
 console.log('Answer "yes" if the number is even, otherwise answer "no".')
 export function isEven()  {
-
-for(let answersCounter = 0;answersCounter < 3; answersCounter +=1) {
+	let answersCounter = 0
+	while(answersCounter < 3) {
 	const randomNumber = Math.floor(Math.random() * 100);
 	const evenNumber = randomNumber % 2 === 0
 	console.log("Question: " + randomNumber);
@@ -14,6 +14,7 @@ for(let answersCounter = 0;answersCounter < 3; answersCounter +=1) {
 	const answerUser = readlineSync.question("Your answer: ");
 if (answerUser === "yes" && evenNumber === true) {
 	console.log("Correct!");
+	answersCounter +=1;
 }
 
 else if (answerUser === "yes" && evenNumber === false) {
@@ -23,6 +24,7 @@ else if (answerUser === "yes" && evenNumber === false) {
 
 	if (answerUser === "no" && evenNumber  === false ) {
 	console.log("Correct!");
+	answersCounter +=1;
 }
 
 else if (answerUser === "no" && evenNumber === true) {
@@ -31,6 +33,7 @@ break;
 }
 
 }
-
+if(answersCounter == 3) {
 console.log(`Congratulations, ${userName}!  `) 
+}
 }
