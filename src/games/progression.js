@@ -6,7 +6,8 @@ console.log(`Hello, ${userName}!`);
 console.log('What number is missing in the progression?')
 export function progression () {
 
-    for(let answersCounter = 0; answersCounter < 3; answersCounter +=1){
+    let answersCounter = 0;
+    while(answersCounter < 3) {
         let randomSwitch = Math.floor(Math.random() * 10 + 1)
         let randomNumber2 = Math.floor(Math.random() * 10 + 1)
         let progression = 0
@@ -31,6 +32,7 @@ export function progression () {
         const answerUser = readlineSync.question('Your answer: ');
         if (answerUser == (result)) {
             console.log('Correct!')
+            answersCounter +=1;;
         }
 
         else {
@@ -39,5 +41,7 @@ export function progression () {
         }
         
     }
-    console.log(`Congratulations, ${userName}! `) 
+    if(answersCounter == 3) {
+        console.log(`Congratulations, ${userName}! `) 
+            }
 }
