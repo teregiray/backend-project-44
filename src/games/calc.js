@@ -13,7 +13,7 @@ export function calc()  {
         let randomNumber1 = Math.floor(Math.random() * 10);
         let randomNumber2 = Math.floor(Math.random() * 10);
         let result = 0;
-        console.log("Question: " + randomNumber1 + randomSign + randomNumber2 );
+        console.log("Question: " + randomNumber1 + " " + randomSign + " " + randomNumber2 );
         
         let answerUser = readlineSync.question("Your answer: ");
         if (randomSign === "+") {
