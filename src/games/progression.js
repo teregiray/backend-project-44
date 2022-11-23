@@ -30,7 +30,7 @@ export function progression () {
 
         console.log(`Question: ${progression} `)
         const answerUser = readlineSync.question('Your answer: ');
-        if (answerUser == (result)) {
+        if (answerUser == result) {
             console.log('Correct!')
             answersCounter +=1;;
         }
