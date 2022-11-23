@@ -5,6 +5,7 @@ const userName = name()
 console.log(`Hello, ${userName}!`);
 console.log('Find the greatest common divisor of given numbers.')
 export function gcd()  {
+  
   let answersCounter = 0;
   while(answersCounter < 3) {
     let randomNumber1 = (Math.floor(Math.random() * 10 + 1))
