@@ -6,7 +6,8 @@ console.log(`Hello, ${userName}!`);
 console.log('Answer "yes" if given number is prime. Otherwise answer "no".')
 export function prime()  {
     let result = 0;
-  for(let answersCounter = 0; answersCounter < 3; answersCounter +=1) {
+    let answersCounter = 0;
+  while(answersCounter < 3) {
     let randomNumber1 = Math.floor(Math.random() *10 +1)
     console.log("Question: " + randomNumber1);
     let answerUser = readlineSync.question("Your answer: ");
@@ -20,10 +21,12 @@ export function prime()  {
     if(resultLength === true && answerUser === "yes") {
         console.log("Correct!")
         resultLength = "yes"
+        answersCounter +=1;
     }
     if(resultLength === false && answerUser === 'no') {
         console.log("Correct!")
         resultLength = "no"
+        answersCounter +=1;
     }
     else {
         console.log(answerUser + ` is wrong answer  ;(. Correct answer was ${resultLength}. \nLet's try again, ${userName}!`);
@@ -31,6 +34,7 @@ export function prime()  {
     }
 
 }
+    if(answersCounter == 3) {
 console.log(`Congratulations, ${userName}! `) 
-
+    }
 }
