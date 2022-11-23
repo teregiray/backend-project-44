@@ -7,31 +7,36 @@ console.log('What is the result of the expression?')
 export function calc()  {
     
    let signs = ["*","-","+"];
-    for(let answersCounter = 0;answersCounter < 3; answersCounter +=1) {
+   let answersCounter = 0
+    while(answersCounter < 3) {
         let randomSign = signs[Math.floor(Math.random(signs.length-1))]
         let randomNumber1 = Math.floor(Math.random() * 10);
         let randomNumber2 = Math.floor(Math.random() * 10);
+        let result = 0;
         console.log("Question: " + randomNumber1 + randomSign + randomNumber2 );
         
         let answerUser = readlineSync.question("Your answer: ");
         if (randomSign === "+") {
-           let result = randomNumber1 + randomNumber2;
+            result = randomNumber1 + randomNumber2;
            if (answerUser == result) {
             console.log("Correct!")
+            answersCounter +=1;
            }
         }
         
         if (randomSign === "-") {
-           let result = randomNumber1 - randomNumber2;
+           result = randomNumber1 - randomNumber2;
            if (answerUser == result) {
             console.log("Correct!")
+            answersCounter +=1;
            }
         }
 
         if (randomSign === "*") {
-           let result = randomNumber1 * randomNumber2;
+            result = randomNumber1 * randomNumber2;
            if (answerUser == result) {
             console.log("Correct!")
+            answersCounter +=1;
            }
         }
            else {
@@ -40,6 +45,9 @@ export function calc()  {
     }
     
 }
+   if( answersCounter == 3) {
+      
         console.log(`Congratulations, ${userName}! `) 
+   }
         }
-        calc()
+        
