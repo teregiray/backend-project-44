@@ -17,7 +17,7 @@ export function progression () {
             if (i === randomNumber2){
                 randomSwitch += randomSwitch
                 result = randomSwitch
-                progression += ` ...`
+                progression += ` ..`
             }
            else { 
 
@@ -28,7 +28,7 @@ export function progression () {
             
         }
 
-        console.log(`Question: ${progression}`)
+        console.log(`Question: ${progression} `)
         const answerUser = readlineSync.question('Your answer: ');
         if (answerUser == (result)) {
             console.log('Correct!')
