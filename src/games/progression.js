@@ -36,7 +36,7 @@ export function progression () {
         }
 
         else {
-            console.log(`'${answerUser}'  is wrong answer  ;(. Correct answer was '${result}'. \nLet's try again, ${userName}!`)
+            console.log(`'${answerUser}' is wrong answer ;(. Correct answer was '${result}'. \nLet's try again, ${userName}!`)
             break;
         }
         
