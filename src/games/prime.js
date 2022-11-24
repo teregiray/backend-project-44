@@ -1,18 +1,18 @@
 import readlineSync from 'readline-sync';
 
-import name from '../cli.js';
+import name from '../index.js';
 
 console.log('Welcome to the Brain Games!');
 const userName = name();
 console.log(`Hello, ${userName}!`);
 console.log('What number is missing in the progression?');
-export function prime() {
+export default function prime() {
   let answersCounter = 0;
   while (answersCounter < 3) {
     let rightAnswer;
     const result = [];
     const randomNumber1 = Math.floor(Math.random() * 10);
-    for (let i = 0; z <= randomNumber1; i += 1) {
+    for (let i = 0; i <= randomNumber1; i += 1) {
       if (randomNumber1 % i === 0) {
         result.push(i);
       }

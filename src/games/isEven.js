@@ -1,12 +1,12 @@
 import readlineSync from 'readline-sync';
 
-import name from '../cli.js';
+import name from '../index.js';
 
 console.log('Welcome to the Brain Games!');
 const userName = name();
 console.log(`Hello, ${userName}!`);
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
-export function isEven() {
+export default function isEven() {
   let answersCounter = 0;
   while (answersCounter < 3) {
     const randomNumber = Math.floor(Math.random() * 100);
@@ -30,7 +30,7 @@ export function isEven() {
       break;
     }
   }
-  if (answersCounter == 3) {
+  if (answersCounter === 3) {
     console.log(`Congratulations, ${userName}!  `);
   }
 }

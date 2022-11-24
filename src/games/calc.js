@@ -1,12 +1,12 @@
 import readlineSync from 'readline-sync';
 
-import name from '../cli.js';
+import name from '../index.js';
 
 console.log('Welcome to the Brain Games!');
 const userName = name();
 console.log(`Hello, ${userName}!`);
 console.log('What is the result of the expression?');
-export function calc() {
+export default function calc() {
   const signs = ['*', '-', '+'];
   let answersCounter = 0;
   while (answersCounter < 3) {
@@ -19,7 +19,7 @@ export function calc() {
     const answerUser = readlineSync.question('Your answer: ');
     if (randomSign === '+') {
       result = randomNumber1 + randomNumber2;
-      if (answerUser == result) {
+      if (answerUser === result) {
         console.log('Correct!');
         answersCounter += 1;
       }
@@ -27,7 +27,7 @@ export function calc() {
 
     if (randomSign === '-') {
       result = randomNumber1 - randomNumber2;
-      if (answerUser == result) {
+      if (answerUser === result) {
         console.log('Correct!');
         answersCounter += 1;
       }
@@ -35,17 +35,17 @@ export function calc() {
 
     if (randomSign === '*') {
       result = randomNumber1 * randomNumber2;
-      if (answerUser == result) {
+      if (answerUser === result) {
         console.log('Correct!');
         answersCounter += 1;
       }
     }
-    if (answerUser != result) {
+    if (answerUser !== result) {
       console.log(`${answerUser} is wrong answer  ;(. Correct answer was ${result}. \nLet's try again, ${userName}!`);
       break;
     }
   }
-  if (answersCounter == 3) {
+  if (answersCounter === 3) {
     console.log(`Congratulations, ${userName}! `);
   }
 }
