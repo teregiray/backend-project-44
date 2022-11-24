@@ -8,8 +8,8 @@ export function progression () {
 
     let answersCounter = 0;
     while(answersCounter < 3) {
-        let randomSwitch = Math.floor(Math.random() * 10 + 1)
-        let randomNumber2 = Math.floor(Math.random() * 10 + 1)
+        let randomSwitch = Math.floor(Math.random() * 10 )
+        let randomNumber2 = Math.floor(Math.random() * 10 )
         let progression = 0
         let result = 0
        
