@@ -24,7 +24,7 @@ export default function gcd() {
     }
 
     maxdel = randomNumber1;
-    if (answerUser === maxdel) {
+    if (answerUser === String(maxdel)) {
       console.log('Correct!');
       answersCounter += 1;
     } else {
