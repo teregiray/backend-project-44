@@ -3,7 +3,7 @@
 <a href="https://codeclimate.com/github/teregiray/backend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/28b76187be54aad05269/maintainability" /></a>
 
 ## brain-even
-<a href="https://asciinema.org/a/Ykad9S9Zxp0QPuFv1gpSKA24S" target="_blank"><img src="https://asciinema.org/a/Ykad9S9Zxp0QPuFv1gpSKA24S.svg" /></a>
+[![asciicast](https://asciinema.org/a/p28BCl4x83BcuxgUqod7v88Tz.svg)](https://asciinema.org/a/p28BCl4x83BcuxgUqod7v88Tz)
 
 ## brain-calc
 <a href="https://asciinema.org/a/sMzgjVFFkgt3bUgyFWMBdxVkt" target="_blank"><img src="https://asciinema.org/a/sMzgjVFFkgt3bUgyFWMBdxVkt.svg" /></a>
