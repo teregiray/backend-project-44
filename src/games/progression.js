@@ -11,7 +11,7 @@ export function progression () {
         let randomSwitch = Math.floor(Math.random() * 10 )
         const rN3 = randomSwitch;
         let randomNumber2 = Math.floor(Math.random() * 10 )
-        let progression = 0
+        let progression = ""
         let result = 0
        
         for  (let i = 0; i <= 10; i +=1){
@@ -29,7 +29,7 @@ export function progression () {
             
         }
 
-        console.log(`Question: ${progression} `)
+        console.log(`Question:${progression} `)
         const answerUser = readlineSync.question('Your answer: ');
         if (answerUser == result) {
             console.log('Correct!')
