@@ -8,20 +8,21 @@ export function progression () {
 
     let answersCounter = 0;
     while(answersCounter < 3) {
-        let randomSwitch = Math.floor(Math.random() * 10 +1)
-        let randomNumber2 = Math.floor(Math.random() * 10 +1)
+        let randomSwitch = Math.floor(Math.random() * 10 )
+        const rN3 = randomSwitch;
+        let randomNumber2 = Math.floor(Math.random() * 10 )
         let progression = 0
         let result = 0
        
         for  (let i = 0; i <= 10; i +=1){
             if (i === randomNumber2){
-                randomSwitch += i
+                randomSwitch += rN3
                 result = randomSwitch
                 progression += ` ..`
             }
            else { 
 
-            randomSwitch += i
+            randomSwitch += rN3
             progression += ` ${randomSwitch}`
            
             }
