@@ -19,7 +19,7 @@ export default function calc() {
     const answerUser = readlineSync.question('Your answer: ');
     if (randomSign === '+') {
       result = randomNumber1 + randomNumber2;
-      if (answerUser === result) {
+      if (answerUser === String(result)) {
         console.log('Correct!');
         answersCounter += 1;
       }
@@ -27,7 +27,7 @@ export default function calc() {
 
     if (randomSign === '-') {
       result = randomNumber1 - randomNumber2;
-      if (answerUser === result) {
+      if (answerUser === String(result)) {
         console.log('Correct!');
         answersCounter += 1;
       }
@@ -35,12 +35,12 @@ export default function calc() {
 
     if (randomSign === '*') {
       result = randomNumber1 * randomNumber2;
-      if (answerUser === result) {
+      if (answerUser === String(result)) {
         console.log('Correct!');
         answersCounter += 1;
       }
     }
-    if (answerUser !== result) {
+    if (answerUser !== String(result)) {
       console.log(`${answerUser} is wrong answer  ;(. Correct answer was ${result}. \nLet's try again, ${userName}!`);
       break;
     }
