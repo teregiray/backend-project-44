@@ -28,7 +28,7 @@ export default function progression() {
 
     console.log(`Question:${progr} `);
     const answerUser = readlineSync.question('Your answer: ');
-    if (answerUser === result) {
+    if (answerUser === String(result)) {
       console.log('Correct!');
       answersCounter += 1;
     } else {
