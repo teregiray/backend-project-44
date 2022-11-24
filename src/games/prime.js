@@ -12,9 +12,9 @@ export function prime() {
     let rightAnswer;
     const result = [];
     const randomNumber1 = Math.floor(Math.random() * 10);
-    for (let z = 0; z <= randomNumber1; z += 1) {
-      if (randomNumber1 % z === 0) {
-        result.push(z);
+    for (let i = 0; z <= randomNumber1; i += 1) {
+      if (randomNumber1 % i === 0) {
+        result.push(i);
       }
     }
 
