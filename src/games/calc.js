@@ -1,11 +1,13 @@
 import readlineSync from 'readline-sync';
 
 import name from '../cli.js' ;
+
 console.log('Welcome to the Brain Games!');
 const userName = name()
 console.log(`Hello, ${userName}!`);
 console.log('What is the result of the expression?')
 export function calc()  {
+
    let signs = ["*","-","+"];
    let answersCounter = 0
     while(answersCounter < 3) {
