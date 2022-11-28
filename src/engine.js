@@ -6,7 +6,7 @@ const roundCount = 3;
 
 export const engine = (gameFunction, description) => () => {
   console.log('Welcome to the Brain Games!');
-  const userName = readlineSync.question('May I have your name?');
+  const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log(description);
   for (let i = 0; i < roundCount; i += 1) {
