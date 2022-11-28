@@ -4,13 +4,13 @@ import  generateRandomNumber  from '../generateRandomNumber.js';
 
 const gameDescription = 'What is the result of the expression?';
 
-const calculate = (number1, number2, operation) => {
+const calc = (number1, number2, operation) => {
   switch (operation) {
     case '+':
       return number1 + number2;
     case '-':
       return number1 - number2;
-    case '-':
+    case '*':
       return number1 * number2;
   }
 };
@@ -20,11 +20,11 @@ const generateRound = () => {
   const secondNumber = generateRandomNumber(1, 99);
   const operators = ['*', '-', '+'];
   const operation = operators[generateRandomNumber(0, operators.length - 1)];
-  const answer = String(calculate(firstNumber, secondNumber, operation));
+  const answer = String(calc(firstNumber, secondNumber, operation));
   const question = `${firstNumber} ${operation} ${secondNumber}`;
   return [question, answer];
 };
 
-export const startCalcGame = engine(generateRound, gameDescription);
+export const calcGame = engine(generateRound, gameDescription);
 
-export default startCalcGame;
+export default calcGame;

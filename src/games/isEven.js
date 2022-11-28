@@ -13,6 +13,6 @@ const generateRound = () => {
   return [question, answer];
 };
 
-export const startEvenGame = engine(generateRound, gameDescription);
+export const startGame = engine(generateRound, gameDescription);
 
-export default startEvenGame;
+export default startGame;
