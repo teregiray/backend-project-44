@@ -14,7 +14,7 @@ const gameFunction = () => {
   const number1 = generateRandomNumber(1, 49);
   const number2 = generateRandomNumber(1, 49);
   const question = `${number1} ${number2}`;
-  const answer = isGcd(number1, number2);
+  const answer = String(isGcd(number1, number2));
   return [question, answer];
 };
 
