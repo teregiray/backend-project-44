@@ -8,7 +8,7 @@ export const engine = (gameFunction, description) => () => {
   const roundCount = 3;
   for (let i = 0; i < roundCount; i += 1) {
     const [question, answer] = gameFunction();
-    console.log(`Question: ${question}`);
+    console.log(`Question:${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer !== answer) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.`);
