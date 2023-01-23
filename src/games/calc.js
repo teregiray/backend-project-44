@@ -1,20 +1,25 @@
-import engine from '../engine.js';
+import { engine } from '../engine.js';
 
-import generateRandomNumber from '../generateRandomNumber.js';
+import { generateRandomNumber } from '../generateRandomNumber.js';
 
 const gameDescription = 'What is the result of the expression?';
 
 const theCalc = (number1, number2, randomSign) => {
+  let answer = 0;
   switch (randomSign) {
     case '*':
-      return number1 * number2;
+      answer = number1 * number2;
+      break;
     case '-':
-      return number1 - number2;
+      answer = number1 - number2;
+      break;
     case '+':
-      return number1 + number2;
+      answer = number1 + number2;
+      break;
     default:
       // решение ошибки 8:3   error  Expected a default case   default-case
   }
+  return answer;
 };
 
 const gameFunction = () => {
