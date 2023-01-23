@@ -19,7 +19,7 @@ const isPrime = (number1) => {
 
 const gameFunction = () => {
   const number1 = generateRandomNumber(1, 49);
-  const question = `${number1}`;
+  const question = ` ${number1}`;
   const answer = isPrime(number1) ? 'yes' : 'no';
   return [question, answer];
 };

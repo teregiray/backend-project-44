@@ -22,7 +22,7 @@ const gameFunction = () => {
   const randomSign = signs[Math.floor(Math.random() * signs.length)];
   const number1 = generateRandomNumber(1, 10);
   const number2 = generateRandomNumber(1, 10);
-  const question = `${number1} ${randomSign} ${number2}`;
+  const question = ` ${number1} ${randomSign} ${number2}`;
   const answer = String(theCalc(number1, number2, randomSign));
   return [question, answer];
 };
