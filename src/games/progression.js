@@ -26,7 +26,7 @@ const progressionFunction = (number1, diffPerElement) => {
 const gameFunction = () => {
   const number1 = generateRandomNumber(1, 10);
   const diffPerElement = generateRandomNumber(1, 10);
-  const question = `${progressionFunction(number1, diffPerElement)[0]}`; // костыль
+  const question = String(`${progressionFunction(number1, diffPerElement)[0]}`); // костыль
   const answer = String(progressionFunction(number1, diffPerElement)[1]); // костыль
   return [question, answer];
 };
