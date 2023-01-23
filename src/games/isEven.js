@@ -10,7 +10,7 @@ const gameFunction = () => {
     const number = generateRandomNumber(1,99);
     const question = `${number}`;
     const answer = isEven(number) ? "yes" : "no";
-    return question, answer
+    return [question, answer]
 }
 
 export const playGame = engine(gameFunction, gameDescription);
