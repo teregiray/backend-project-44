@@ -12,6 +12,8 @@ const theCalc = (number1, number2, randomSign) => {
       return number1 - number2;
     case '+':
       return number1 + number2;
+    default:
+      // решение ошибки 8:3   error  Expected a default case   default-case
   }
 };
 

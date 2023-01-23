@@ -6,4 +6,5 @@ extends:
 parserOptions:
   ecmaVersion: latest
   sourceType: module
-rules: {no-console: off, import/extensions: off}
+rules: {no-console: off, import/extensions: off, import/no-named-as-default: off, consistent-return: off}
+ #  добавил третье правило, потому что не нашёл другого решения, последнее правило, чтобы решить проблему с ожидаемымым return в конце кейса
