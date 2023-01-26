@@ -18,9 +18,5 @@ const gameFunction = () => {
   return [question, answer];
 };
 
-<<<<<<< HEAD:src/games/gcd.js
 const playGcd = engine(gameFunction, gameDescription);
-=======
-export const playGcd = engine(gameFunction, gameDescription);
->>>>>>> temp-branch:src/games/gameGcd.js
 export default playGcd;

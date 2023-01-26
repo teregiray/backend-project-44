@@ -24,10 +24,6 @@ const gameFunction = () => {
   return [question, answer];
 };
 
-<<<<<<< HEAD:src/games/prime.js
-const playPrime = engine(gameFunction, gameDescription);
-export default playPrime;
-=======
 export const playIsPrime = engine(gameFunction, gameDescription);
 export default playIsPrime;
->>>>>>> temp-branch:src/games/gameIsPrime.js
+

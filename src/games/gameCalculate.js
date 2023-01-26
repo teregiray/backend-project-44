@@ -32,9 +32,5 @@ const gameFunction = () => {
   return [question, answer];
 };
 
-<<<<<<< HEAD:src/games/calc.js
 const playCalc = engine(gameFunction, gameDescription);
-=======
-export const playCalc = engine(gameFunction, gameDescription);
->>>>>>> temp-branch:src/games/gameCalculate.js
 export default playCalc;

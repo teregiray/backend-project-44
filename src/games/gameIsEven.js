@@ -13,10 +13,5 @@ const gameFunction = () => {
   return [question, answer];
 };
 
-<<<<<<< HEAD:src/games/isEven.js
-const playEven = engine(gameFunction, gameDescription);
-export default playEven;
-=======
-export const playIsEven = engine(gameFunction, gameDescription);
+const playIsEven = engine(gameFunction, gameDescription);
 export default playIsEven;
->>>>>>> temp-branch:src/games/gameIsEven.js
