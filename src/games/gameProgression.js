@@ -31,6 +31,5 @@ const gameFunction = () => {
   return [question, answer];
 };
 
-
 const playProgression = engine(gameFunction, gameDescription);
 export default playProgression;
