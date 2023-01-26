@@ -13,7 +13,7 @@ const theCalc = (number1, number2, randomSign) => {
     case '+':
       return number1 + number2;
     default:
-      // решение ошибки 8:3   error  Expected a default case   default-case
+      console.log('ошибка: некорректный оператор!');
   }
 };
 
