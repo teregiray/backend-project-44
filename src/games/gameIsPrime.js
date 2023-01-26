@@ -24,5 +24,5 @@ const gameFunction = () => {
   return [question, answer];
 };
 
-export const playGame = engine(gameFunction, gameDescription);
-export default playGame;
+export const playIsPrime = engine(gameFunction, gameDescription);
+export default playIsPrime;

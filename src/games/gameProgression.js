@@ -1,6 +1,6 @@
-import engine from '../engine.js';
+import { engine } from '../engine.js';
 
-import generateRandomNumber from '../generateRandomNumber.js';
+import { generateRandomNumber } from '../generateRandomNumber.js';
 
 const gameDescription = 'What number is missing in the progression?';
 
@@ -26,12 +26,10 @@ const progressionFunction = (number1, diffPerElement) => {
 const gameFunction = () => {
   const number1 = generateRandomNumber(1, 10);
   const diffPerElement = generateRandomNumber(1, 10);
-  const question = `${progressionFunction(number1, diffPerElement)[0]}`; // костыль
+  const question = String(`${progressionFunction(number1, diffPerElement)[0]}`); // костыль
   const answer = String(progressionFunction(number1, diffPerElement)[1]); // костыль
   return [question, answer];
 };
 
-export const playGame = engine(gameFunction, gameDescription);
-export default playGame;
-
-// зарандомить место числа
+const playProgression = engine(gameFunction, gameDescription);
+export default playProgression;
