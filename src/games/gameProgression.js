@@ -31,5 +31,10 @@ const gameFunction = () => {
   return [question, answer];
 };
 
+<<<<<<< HEAD:src/games/progression.js
 const playGame = engine(gameFunction, gameDescription);
 export default playGame;
+=======
+const playProgression = engine(gameFunction, gameDescription);
+export default playProgression;
+>>>>>>> temp-branch:src/games/gameProgression.js

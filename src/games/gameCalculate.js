@@ -17,7 +17,7 @@ const theCalc = (number1, number2, randomSign) => {
       answer = number1 + number2;
       break;
     default:
-      // решение ошибки 8:3   error  Expected a default case   default-case
+      console.log('ошибка: некорректный оператор!');
   }
   return answer;
 };
@@ -32,5 +32,9 @@ const gameFunction = () => {
   return [question, answer];
 };
 
+<<<<<<< HEAD:src/games/calc.js
 const playCalc = engine(gameFunction, gameDescription);
+=======
+export const playCalc = engine(gameFunction, gameDescription);
+>>>>>>> temp-branch:src/games/gameCalculate.js
 export default playCalc;
