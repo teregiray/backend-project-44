@@ -32,5 +32,5 @@ const gameFunction = () => {
   return [question, answer];
 };
 
-const playCalc = engine(gameFunction, gameDescription);
-export default playCalc;
+const playGame = engine(gameFunction, gameDescription);
+export default playGame;
