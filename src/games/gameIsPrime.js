@@ -4,10 +4,10 @@ import { generateRandomNumber } from '../generateRandomNumber.js';
 
 const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const isPrime = (number1) => {
+const isPrime = (number) => {
   let result = 0;
-  for (let i = 1; i <= number1; i += 1) {
-    if (number1 % i === 0) {
+  for (let i = 1; i <= number; i += 1) {
+    if (number % i === 0) {
       result += 1;
     }
   }
@@ -18,9 +18,9 @@ const isPrime = (number1) => {
 };
 
 const gameFunction = () => {
-  const number1 = generateRandomNumber(1, 49);
-  const question = ` ${number1}`;
-  const answer = isPrime(number1) ? 'yes' : 'no';
+  const number = generateRandomNumber(1, 49);
+  const question = ` ${number}`;
+  const answer = isPrime(number) ? 'yes' : 'no';
   return [question, answer];
 };
 
